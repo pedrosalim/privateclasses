@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color_background: white;
+    --color_primary: #F9D342;
+    --color_secondary: #292826;
+    --color_backgroundTwo: #3CB371;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--color_background);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--color_secondary);
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.links a + a{
+    margin-left: 40px;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.links a:hover {
+    color: var(--color_primary);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color_primary);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 600ms ease-in-out;
+}
+
+.card {
+    background-color: var(--color_primary);
+    width: 800px;
+    min-height: 400px;
+
+    /* >>>> IMAGE CENTER <<<< */
+    margin: 45px auto;
+
+    /* >>>> DISPLAY <<<< */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    /* >>>> SOMBRA <<<< */
+    box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.4);
+
+    /* >>>> ANIMAÇÂO <<<< */
+    animation-name: up;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+/* >>>> DETAILS <<<< */
+
+.details {
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.details .item div:nth-child(2) span {
+    padding: 8px 16px;
+    background-color: #b1a563;
+    border-radius: 16px;
+    color: black;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* >>>> FORM <<<< */
+
+input {
+    width: 100%;
+    outline: none;
+    background: var(--color_primary);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 5px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(82, 82, 82);
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: #2E8B57;
+    border-radius: 5px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    transition: 700ms;
+}
+button[type="submit"]:hover {
+    background-color: rgb(37, 110, 69);
+}
+
+select {
+    background-color: white;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+select option {
+    align-items: center;
+
+}
