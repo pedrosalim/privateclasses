@@ -164,9 +164,10 @@ input::placeholder {
     color: rgb(82, 82, 82);
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     padding: 8px 32px;
-    background-color: #2E8B57;
+    background-color: #438a5e;
     border-radius: 5px;
     margin-top: 32px;
     width: 100%;
@@ -175,6 +176,14 @@ button[type="submit"] {
     text-transform: uppercase;
     transition: 700ms;
 }
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
 button[type="submit"]:hover {
     background-color: rgb(37, 110, 69);
 }
@@ -188,5 +197,4 @@ select {
 
 select option {
     align-items: center;
-
 }

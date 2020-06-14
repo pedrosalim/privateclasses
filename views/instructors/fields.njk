@@ -1,0 +1,94 @@
+<div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input 
+                    type="url" 
+                    name="avatar_url" 
+                    placeholder="http://"
+                    value="{{ teacher.avatar_url }}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Professor</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="name"
+                    placeholder="Seu nome"
+                    value="{{ teacher.name }}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Data de nascimento</div>
+            <div>
+                <input 
+                type="date" 
+                name="birth"
+                value="{{ teacher.birth }}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Grau de escolaridade</div>
+            <div>
+                <select name="grau" id="grau">
+                    <option value="M">Ensino Médio Completo</option>
+                    <option value="S">Ensino Superior Completo</option>
+                    <option value="ME">Mestrado</option>
+                    <option value="D">Doutorado</option>                   
+                </select>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Tipo de aula</div>
+            <div>
+                <span><input 
+                    type="radio" 
+                    name="type" 
+                    value="P"
+                    {% if teacher.type == "P"%}
+                    checked
+                    {% endif %}>Presencial
+                </span>
+                <span><input 
+                    type="radio" 
+                    name="type" 
+                    value="D"
+                    {% if teacher.type == "D"%}
+                    checked
+                    {% endif %}>À distância
+                </span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Acompanhamento</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="acting"
+                    placeholder="Separe as matérias oferecidas por vírgula"
+                    value="{{ teacher.acting }}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Valor hora aula</div>
+            <div>
+                <input 
+                    type="text" 
+                    name="value"
+                    placeholder="Ex: 50 Reais"
+                    value="{{ teacher.value }}"
+                >
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>
