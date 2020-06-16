@@ -198,3 +198,12 @@ select {
 select option {
     align-items: center;
 }
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: rgb(144, 110, 175);
+}
+
+#form-delete button[type="submit"]:hover {
+    background-color: rgb(105, 71, 136);
+}
