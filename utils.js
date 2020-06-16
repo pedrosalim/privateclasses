@@ -28,12 +28,12 @@ module.exports = {
         return `${year}-${month}-${day}`
     },
 
-    graduation: function(value) {
+    scholarity: function(value) {
         switch(value) {
-            case ('M'): return 'Ensino Médio'
-            case ('S'): return 'Ensino Superior'
-            case ('ME'): return 'Mestrado'
-            case ('D'): return 'Doutorado'
+            case ('Ensino Médio'): return 'Ensino Médio'
+            case ('Superior'): return 'Ensino Superior'
+            case ('Mestrado'): return 'Mestrado'
+            case ('Doutorado'): return 'Doutorado'
         }
         return value
     }
