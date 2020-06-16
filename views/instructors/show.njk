@@ -23,7 +23,11 @@
 
         <div class="item">
             <div>Grau de escolaridade</div>
-            <div>{{ teacher.grau }}</div>
+            <div>
+            {% for teacher in teacher.scholarity %}
+                {{ teacher }}
+            {% endfor %}
+        </div>
         </div>
 
         <div class="item">
