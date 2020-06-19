@@ -1,9 +1,8 @@
-/*const modalOverlay = document.querySelector('.link');
-const link = document.querySelectorAll('.links')
-const modal = document.querySelector('.modal')
+const currentPage = location.pathname
+const menuItems = document.querySelectorAll("header .links a")]
 
-for (let tab of link) {
-    tab.addEventListener('click', function() {
-        tab.classList.add('active')
-    })
-}*/
+for (item of menuItems) {
+    if (currentPage.includes(item.getAttribute("href"))) {
+        item.classList.add("active")
+    }
+}
