@@ -144,13 +144,19 @@ header {
 
 /* >>>> FORM <<<< */
 
-input {
+input, select {
     width: 100%;
     outline: none;
     background: var(--color_primary);
     color: black;
     font-weight: bold;
     font-size: 18px;
+    
+}
+
+input:-webkit-autofill {
+    box-shadow: none;
+    -webkit-box-shadow: 0 0 0 30px var(--color_primary) inset;
 }
 
 input[type="radio"] {
@@ -236,11 +242,6 @@ th {
 
 td, th {
     padding: 16px;
-    border-bottom: 1px solid #7159c1;
-}
-
-tbody tr:last-child td {
-    border-bottom: none;
 }
 
 tbody tr td:first-child {
@@ -259,7 +260,8 @@ tbody tr td:first-child span {
     border: 2px solid white;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {
     background-color: #7159c1;
     padding: 8px 16px;
     text-decoration: none;
@@ -267,6 +269,12 @@ tbody tr td:last-child a {
     color: white;
     font-size: 12px;
     border-radius: 4px;
+}
+
+.table-container > a {
+    margin-bottom: 16px;
+    margin-left: 16px;
+    display: inline-block;
 }
 
 .table-container thead tr th:last-child,
