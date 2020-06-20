@@ -1,9 +1,38 @@
 {
+  "students": [
+    {
+      "avatar_url": "https://midias.agazeta.com.br/2020/03/01/escola-civico-militar-de-montanha-198145.jpg",
+      "name": "Pedro Salim",
+      "email": "asda@gmail.com",
+      "birth": 867283200000,
+      "year": "Terceiro Ano",
+      "carga": "20",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://www.molinatomaz.com.br/site/wp-content/uploads/2017/10/academia-condom%C3%ADnio..jpg",
+      "name": "Theo",
+      "email": "hahtimbum@gmail.com",
+      "birth": 901152000000,
+      "year": "Sétima Série",
+      "carga": "50",
+      "id": 2
+    },
+    {
+      "avatar_url": "https://www.molinatomaz.com.br/site/wp-content/uploads/2017/10/academia-condom%C3%ADnio..jpg",
+      "name": "Sofia Frois",
+      "email": "frois_dtna2@hotmail.com",
+      "birth": 951004800000,
+      "year": "Primeiro Ano",
+      "carga": "22",
+      "id": 3
+    }
+  ],
   "teachers": [
     {
       "id": 1,
       "avatar_url": "https://cloudfront-us-east-1.images.arcpublishing.com/tbt/FYCBENY6BVF3NMKL2YCSOC3YAM.JPG",
-      "name": "Pedro",
+      "name": "Pedro Henrique Figueiredo Salim",
       "birth": 867283200000,
       "scholarity": "Mestrado",
       "type": "P",
@@ -21,17 +50,6 @@
       "acting": "Fisioterapia",
       "value": "55 Reais",
       "created_at": 1592322281178
-    },
-    {
-      "id": 3,
-      "avatar_url": "data:image/jpeg;base64,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",
-      "name": "Theo",
-      "birth": 1532390400000,
-      "scholarity": "Doutorado",
-      "type": "P",
-      "acting": "Latir",
-      "value": "1000 Reais",
-      "created_at": 1592322320937
     }
   ]
 }
